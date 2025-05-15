@@ -15,8 +15,8 @@
 source $MODULESHOME/init/bash
 module load nco
 
-ZONING_FILE=zone_mappings.txt
-#ZONING_FILE=daymet_elm_mappings.txt #BAM: this specifies which DAYMET tiles to pull info for ELM so the entire dataset doesn't have to be pulled, not sure what the corresponding version of this would be for GWSP3, need to find this .txt file and look
+ZONING_FILE=zone_mappings.txt #BAM: I think this specifies which tiles to pull info for which site lat/lon ELM so the entire dataset doesn't have to be pulled
+#ZONING_FILE=daymet_elm_mappings.txt  
 
 cwd=$(pwd)
 #BAM: makepointdata.py is what gets called to actual pull the data for the points of interest
@@ -28,7 +28,7 @@ if srun -n 128 python3 ./makepointdata.py \ #BAM:pretty sure srun needs to be us
   --mysimyr 1850 \ #BAM: start year for model sims (GSWP3 starts 1850)
   --model ELM \
   --surfdata_grid --res hcru_hcru \ #BAM: hcru_hcru means use the default grid resolution, which is 0.5 deg
-  --point_list ${ZONING_FILE} \ #BAM: this is where we need to pass the .txt file path that has the lat/lons for the points of interest
+  --point_list ${ZONING_FILE} \ #BAM: this is where we need to pass the .txt file path that has the lat/lons for the points of interest and their associated tile numbers
   --point_area_kmxkm 1.0 & sleep 10 #BAM: not sure what the sleep 10 command does...
 
 then
