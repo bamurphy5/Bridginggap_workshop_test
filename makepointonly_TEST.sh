@@ -4,7 +4,7 @@
 #SBATCH -p batch_ccsi
 #SBATCH --mem=0G
 #SBATCH -N 1
-#SBATCH -n 128
+#SBATCH -n 2
 #SBATCH -c 1
 #SBATCH --ntasks-per-node 128
 #SBATCH --job-name=makepointonly
@@ -29,7 +29,6 @@ if srun -n 128 python3 ./makepointdata.py \ #BAM:pretty sure srun needs to be us
   --model ELM \
   --surfdata_grid --res hcru_hcru \ #BAM: hcru_hcru means use the default grid resolution, which is 0.5 deg
   --point_list ${ZONING_FILE} \ #BAM: this is where we need to pass the .txt file path that has the lat/lons for the points of interest and their associated tile numbers
-  --point_area_kmxkm 1.0 & sleep 10 #BAM: not sure what the sleep 10 command does...
 
 then
   wait
