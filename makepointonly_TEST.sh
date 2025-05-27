@@ -6,7 +6,7 @@
 #SBATCH -N 1
 #SBATCH -n 2
 #SBATCH -c 1
-#SBATCH --ntasks-per-node 128
+#SBATCH --ntasks-per-node 2
 #SBATCH --job-name=makepointonly
 #SBATCH -o ./%j-output.txt
 #SBATCH -e ./%j-error.txt
@@ -20,7 +20,7 @@ ZONING_FILE=zone_mappings.txt #BAM: I think this specifies which tiles to pull i
 
 cwd=$(pwd)
 #BAM: makepointdata.py is what gets called to actual pull the data for the points of interest
-if srun -n 128 python3 ./makepointdata.py \ #BAM:pretty sure srun needs to be used to submit jobs on baseline
+if srun -n 2 python3 ./makepointdata.py \ #BAM:pretty sure srun needs to be used to submit jobs on baseline
 #if python3 ./makepointdata.py \
   --ccsm_input /gpfs/wolf2/cades/cli185/world-shared/e3sm/inputdata \ #this is the location of the input data on baseline, naming s(x) matches what makepointdata.py looks for
   --keep_duplicates \
