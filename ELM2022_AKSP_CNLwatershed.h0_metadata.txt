@@ -1,0 +1,3340 @@
+File ~/NGEE_modeling/ELM_ArcticPFT/ELM2022_AKSP_CNLwatershed_ICB20TRCNPRDCTCBC.elm.h0.2000-01-01-00000.nc (NC_FORMAT_64BIT):
+
+     552 variables (excluding dimension variables):
+        int mcdate[time]   
+            long_name: current date (YYYYMMDD)
+        int mcsec[time]   
+            long_name: current seconds of current date
+            units: s
+        int mdcur[time]   
+            long_name: current day (from base day)
+        int mscur[time]   
+            long_name: current seconds of current day
+        int nstep[time]   
+            long_name: time step
+        double time_bounds[hist_interval,time]   
+            long_name: history time interval endpoints
+        char date_written[string_length,time]   
+        char time_written[string_length,time]   
+        float lon[lndgrid]   
+            long_name: coordinate longitude
+            units: degrees_east
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float lat[lndgrid]   
+            long_name: coordinate latitude
+            units: degrees_north
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float area[lndgrid]   
+            long_name: grid cell areas
+            units: km^2
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float topo[lndgrid]   
+            long_name: grid cell topography
+            units: m
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float landfrac[lndgrid]   
+            long_name: land fraction
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        int landmask[lndgrid]   
+            long_name: land/ocean mask (0.=ocean and 1.=land)
+            _FillValue: -9999
+            missing_value: -9999
+        int pftmask[lndgrid]   
+            long_name: pft real/fake mask (0.=fake and 1.=real)
+            _FillValue: -9999
+            missing_value: -9999
+        float ACTUAL_IMMOB[lndgrid,time]   
+            long_name: actual N immobilization
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ACTUAL_IMMOB_P[lndgrid,time]   
+            long_name: actual P immobilization
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ADSORBTION_P[lndgrid,time]   
+            long_name: adsorb P flux
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float AGNPP[lndgrid,time]   
+            long_name: aboveground NPP
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float AGWDNPP[lndgrid,time]   
+            long_name: aboveground wood NPP
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ALT[lndgrid,time]   
+            long_name: current active layer thickness
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ALTMAX[lndgrid,time]   
+            long_name: maximum annual active layer thickness
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ALTMAX_LASTYEAR[lndgrid,time]   
+            long_name: maximum prior year active layer thickness
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float AR[lndgrid,time]   
+            long_name: autotrophic respiration (MR + GR)
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float AVAILC[lndgrid,time]   
+            long_name: C flux available for allocation
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float AVAIL_RETRANSP[lndgrid,time]   
+            long_name: P flux available from retranslocation pool
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BAF_CROP[lndgrid,time]   
+            long_name: fractional area burned for crop
+            units: proportion/sec
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BAF_PEATF[lndgrid,time]   
+            long_name: fractional area burned in peatland
+            units: proportion/sec
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BCDEP[lndgrid,time]   
+            long_name: total BC deposition (dry+wet) from atmosphere
+            units: kg/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BGNPP[lndgrid,time]   
+            long_name: belowground NPP
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BIOCHEM_PMIN[lndgrid,time]   
+            long_name: biochemical rate of P mineralization
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BIOCHEM_PMIN_TO_PLANT[lndgrid,time]   
+            long_name: plant uptake of biochemical P mineralization
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BTRAN[lndgrid,time]   
+            long_name: transpiration beta factor
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float BUILDHEAT[lndgrid,time]   
+            long_name: heat flux from urban building interior to walls and roof
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4PROD[lndgrid,time]   
+            long_name: Gridcell total production of CH4
+            units: gC/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4_SURF_AERE_SAT[lndgrid,time]   
+            long_name: aerenchyma surface CH4 flux for inundated area; (+ to atm)
+            units: mol/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4_SURF_AERE_UNSAT[lndgrid,time]   
+            long_name: aerenchyma surface CH4 flux for non-inundated area; (+ to atm)
+            units: mol/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4_SURF_DIFF_SAT[lndgrid,time]   
+            long_name: diffusive surface CH4 flux for inundated / lake area; (+ to atm)
+            units: mol/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4_SURF_DIFF_UNSAT[lndgrid,time]   
+            long_name: diffusive surface CH4 flux for non-inundated area; (+ to atm)
+            units: mol/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4_SURF_EBUL_SAT[lndgrid,time]   
+            long_name: ebullition surface CH4 flux for inundated / lake area; (+ to atm)
+            units: mol/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CH4_SURF_EBUL_UNSAT[lndgrid,time]   
+            long_name: ebullition surface CH4 flux for non-inundated area; (+ to atm)
+            units: mol/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CMASS_BALANCE_ERROR[lndgrid,time]   
+            long_name: Gridcell carbon mass balance error
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float COL_PTRUNC[lndgrid,time]   
+            long_name: column-level sink for P truncation
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CONC_CH4_SAT[lndgrid,levgrnd,time]   
+            long_name: CH4 soil Concentration for inundated / lake area
+            units: mol/m3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CONC_CH4_UNSAT[lndgrid,levgrnd,time]   
+            long_name: CH4 soil Concentration for non-inundated area
+            units: mol/m3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CONC_O2_SAT[lndgrid,levgrnd,time]   
+            long_name: O2 soil Concentration for inundated / lake area
+            units: mol/m3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CONC_O2_UNSAT[lndgrid,levgrnd,time]   
+            long_name: O2 soil Concentration for non-inundated area
+            units: mol/m3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CPOOL[lndgrid,time]   
+            long_name: temporary photosynthate C pool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDC[lndgrid,time]   
+            long_name: CWD C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDC_HR[lndgrid,time]   
+            long_name: coarse woody debris C heterotrophic respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDC_LOSS[lndgrid,time]   
+            long_name: coarse woody debris C loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDC_TO_LITR2C[lndgrid,time]   
+            long_name: decomp. of coarse woody debris C to litter 2 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDC_TO_LITR3C[lndgrid,time]   
+            long_name: decomp. of coarse woody debris C to litter 3 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDC_vr[lndgrid,levdcmp,time]   
+            long_name: CWD C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDN[lndgrid,time]   
+            long_name: CWD N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDN_TO_LITR2N[lndgrid,time]   
+            long_name: decomp. of coarse woody debris N to litter 2 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDN_TO_LITR3N[lndgrid,time]   
+            long_name: decomp. of coarse woody debris N to litter 3 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDN_vr[lndgrid,levdcmp,time]   
+            long_name: CWD N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDP[lndgrid,time]   
+            long_name: CWD P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDP_TO_LITR2P[lndgrid,time]   
+            long_name: decomp. of coarse woody debris P to litter 2 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDP_TO_LITR3P[lndgrid,time]   
+            long_name: decomp. of coarse woody debris P to litter 3 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float CWDP_vr[lndgrid,levdcmp,time]   
+            long_name: CWD P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEADCROOTC[lndgrid,time]   
+            long_name: dead coarse root C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEADCROOTN[lndgrid,time]   
+            long_name: dead coarse root N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEADCROOTP[lndgrid,time]   
+            long_name: dead coarse root P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEADSTEMC[lndgrid,time]   
+            long_name: dead stem C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEADSTEMN[lndgrid,time]   
+            long_name: dead stem N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEADSTEMP[lndgrid,time]   
+            long_name: dead stem P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DEFICIT[lndgrid,time]   
+            long_name: runoff supply deficit
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DENIT[lndgrid,time]   
+            long_name: total rate of denitrification
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DESORPTION_P[lndgrid,time]   
+            long_name: desorp P flux
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DISPVEGC[lndgrid,time]   
+            long_name: displayed veg carbon, excluding storage and cpool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DISPVEGN[lndgrid,time]   
+            long_name: displayed vegetation nitrogen
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DISPVEGP[lndgrid,time]   
+            long_name: displayed vegetation phosphorus
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DSTDEP[lndgrid,time]   
+            long_name: total dust deposition (dry+wet) from atmosphere
+            units: kg/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DSTFLXT[lndgrid,time]   
+            long_name: total surface dust emission
+            units: kg/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWB[lndgrid,time]   
+            long_name: net change in total water mass
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_CONV_CFLUX_DRIBBLED[lndgrid,time]   
+            long_name: conversion C flux (immediate loss to atm), dribbled throughout the year
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_CONV_CFLUX_GRC[lndgrid,time]   
+            long_name: conversion C flux (immediate loss to atm) (0 at all times except first timestep of year)
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_CONV_NFLUX_GRC[lndgrid,time]   
+            long_name: conversion C flux (immediate loss to atm) (0 at all times except first timestep of year)
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_CONV_PFLUX_GRC[lndgrid,time]   
+            long_name: conversion C flux (immediate loss to atm) (0 at all times except first timestep of year)
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_SLASH_CFLUX[lndgrid,time]   
+            long_name: slash C flux to litter and CWD due to land use
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_SLASH_NFLUX[lndgrid,time]   
+            long_name: slash N flux to litter and CWD due to land use
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float DWT_SLASH_PFLUX[lndgrid,time]   
+            long_name: slash P flux to litter and CWD due to land use
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float EFLX_DYNBAL[lndgrid,time]   
+            long_name: dynamic land cover change conversion energy flux
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float EFLX_GRND_LAKE[lndgrid,time]   
+            long_name: net heat flux into lake/snow surface, excluding light transmission
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float EFLX_LH_TOT[lndgrid,time]   
+            long_name: total latent heat flux [+ to atm]
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float EFLX_LH_TOT_R[lndgrid,time]   
+            long_name: Rural total evaporation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float EFLX_LH_TOT_U[lndgrid,time]   
+            long_name: Urban total evaporation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ELAI[lndgrid,time]   
+            long_name: exposed one-sided leaf area index
+            units: m^2/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ER[lndgrid,time]   
+            long_name: total ecosystem respiration, autotrophic + heterotrophic
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ERRH2O[lndgrid,time]   
+            long_name: total water conservation error
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ERRH2OSNO[lndgrid,time]   
+            long_name: imbalance in snow depth (liquid water)
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ERRSEB[lndgrid,time]   
+            long_name: surface energy conservation error
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ERRSOI[lndgrid,time]   
+            long_name: soil/lake energy conservation error
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ERRSOL[lndgrid,time]   
+            long_name: solar radiation conservation error
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ESAI[lndgrid,time]   
+            long_name: exposed one-sided stem area index
+            units: m^2/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FAREA_BURNED[lndgrid,time]   
+            long_name: timestep fractional area burned
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FCEV[lndgrid,time]   
+            long_name: canopy evaporation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FCH4[lndgrid,time]   
+            long_name: Gridcell surface CH4 flux to atmosphere (+ to atm)
+            units: kgC/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FCH4TOCO2[lndgrid,time]   
+            long_name: Gridcell oxidation of CH4 to CO2
+            units: gC/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FCH4_DFSAT[lndgrid,time]   
+            long_name: CH4 additional flux due to changing fsat, vegetated landunits only
+            units: kgC/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FCOV[lndgrid,time]   
+            long_name: fractional impermeable area
+            units: unitless
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FCTR[lndgrid,time]   
+            long_name: canopy transpiration
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FGEV[lndgrid,time]   
+            long_name: ground evaporation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FGR[lndgrid,time]   
+            long_name: heat flux into soil/snow including snow melt and lake / snow light transmission
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FGR12[lndgrid,time]   
+            long_name: heat flux between soil layers 1 and 2
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FGR_R[lndgrid,time]   
+            long_name: Rural heat flux into soil/snow including snow melt and snow light transmission
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FGR_U[lndgrid,time]   
+            long_name: Urban heat flux into soil/snow including snow melt
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FH2OSFC[lndgrid,time]   
+            long_name: fraction of ground covered by surface water
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FINUNDATED[lndgrid,time]   
+            long_name: fractional inundated area of vegetated columns
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FINUNDATED_LAG[lndgrid,time]   
+            long_name: time-lagged inundated fraction of vegetated columns
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FIRA[lndgrid,time]   
+            long_name: net infrared (longwave) radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FIRA_R[lndgrid,time]   
+            long_name: Rural net infrared (longwave) radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FIRA_U[lndgrid,time]   
+            long_name: Urban net infrared (longwave) radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FIRE[lndgrid,time]   
+            long_name: emitted infrared (longwave) radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FIRE_R[lndgrid,time]   
+            long_name: Rural emitted infrared (longwave) radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FIRE_U[lndgrid,time]   
+            long_name: Urban emitted infrared (longwave) radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FLDS[lndgrid,time]   
+            long_name: atmospheric longwave radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPG[lndgrid,time]   
+            long_name: fraction of potential gpp due to N limitation
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPG_P[lndgrid,time]   
+            long_name: fraction of potential gpp due to P limitation
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPI[lndgrid,time]   
+            long_name: fraction of potential immobilization of nitrogen
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPI_P[lndgrid,time]   
+            long_name: fraction of potential immobilization of phosphorus
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPI_P_vr[lndgrid,levdcmp,time]   
+            long_name: fraction of potential immobilization of phosphorus
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPI_vr[lndgrid,levdcmp,time]   
+            long_name: fraction of potential immobilization of nitrogen
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPSN[lndgrid,time]   
+            long_name: photosynthesis
+            units: umol/m2s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPSN_WC[lndgrid,time]   
+            long_name: Rubisco-limited photosynthesis
+            units: umol/m2s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPSN_WJ[lndgrid,time]   
+            long_name: RuBP-limited photosynthesis
+            units: umol/m2s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FPSN_WP[lndgrid,time]   
+            long_name: Product-limited photosynthesis
+            units: umol/m2s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FROOTC[lndgrid,time]   
+            long_name: fine root C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FROOTC_ALLOC[lndgrid,time]   
+            long_name: fine root C allocation
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FROOTC_LOSS[lndgrid,time]   
+            long_name: fine root C loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FROOTN[lndgrid,time]   
+            long_name: fine root N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FROOTP[lndgrid,time]   
+            long_name: fine root P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FROST_TABLE[lndgrid,time]   
+            long_name: frost table depth (vegetated landunits only)
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSA[lndgrid,time]   
+            long_name: absorbed solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSAT[lndgrid,time]   
+            long_name: fractional area with water table at surface
+            units: unitless
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSA_R[lndgrid,time]   
+            long_name: Rural absorbed solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSA_U[lndgrid,time]   
+            long_name: Urban absorbed solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDS[lndgrid,time]   
+            long_name: atmospheric incident solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSND[lndgrid,time]   
+            long_name: direct nir incident solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSNDLN[lndgrid,time]   
+            long_name: direct nir incident solar radiation at local noon
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSNI[lndgrid,time]   
+            long_name: diffuse nir incident solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSVD[lndgrid,time]   
+            long_name: direct vis incident solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSVDLN[lndgrid,time]   
+            long_name: direct vis incident solar radiation at local noon
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSVI[lndgrid,time]   
+            long_name: diffuse vis incident solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSDSVILN[lndgrid,time]   
+            long_name: diffuse vis incident solar radiation at local noon
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSH[lndgrid,time]   
+            long_name: sensible heat
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSH_G[lndgrid,time]   
+            long_name: sensible heat from ground
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSH_NODYNLNDUSE[lndgrid,time]   
+            long_name: sensible heat not including correction for land use change
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSH_R[lndgrid,time]   
+            long_name: Rural sensible heat
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSH_U[lndgrid,time]   
+            long_name: Urban sensible heat
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSH_V[lndgrid,time]   
+            long_name: sensible heat from veg
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSM[lndgrid,time]   
+            long_name: snow melt heat flux
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSM_R[lndgrid,time]   
+            long_name: Rural snow melt heat flux
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSM_U[lndgrid,time]   
+            long_name: Urban snow melt heat flux
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSNO[lndgrid,time]   
+            long_name: fraction of ground covered by snow
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSNO_EFF[lndgrid,time]   
+            long_name: effective fraction of ground covered by snow
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSR[lndgrid,time]   
+            long_name: reflected solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSRND[lndgrid,time]   
+            long_name: direct nir reflected solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSRNDLN[lndgrid,time]   
+            long_name: direct nir reflected solar radiation at local noon
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSRNI[lndgrid,time]   
+            long_name: diffuse nir reflected solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSRVD[lndgrid,time]   
+            long_name: direct vis reflected solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSRVDLN[lndgrid,time]   
+            long_name: direct vis reflected solar radiation at local noon
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float FSRVI[lndgrid,time]   
+            long_name: diffuse vis reflected solar radiation
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_CO2_SOIL[lndgrid,time]   
+            long_name: total soil-atm. CO2 exchange
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_CO2_SOIL_vr[lndgrid,levdcmp,time]   
+            long_name: total vertically resolved soil-atm. CO2 exchange
+            units: gC/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_DENIT[lndgrid,time]   
+            long_name: denitrification flux
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_DENIT_vr[lndgrid,levdcmp,time]   
+            long_name: denitrification flux
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_N2O_DENIT[lndgrid,time]   
+            long_name: denitrification N2O flux
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_N2O_NIT[lndgrid,time]   
+            long_name: nitrification N2O flux
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_NIT[lndgrid,time]   
+            long_name: nitrification flux
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float F_NIT_vr[lndgrid,levdcmp,time]   
+            long_name: nitrification flux
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GC_HEAT1[lndgrid,time]   
+            long_name: initial gridcell total heat content
+            units: J/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GC_ICE1[lndgrid,time]   
+            long_name: initial gridcell total ice content
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GC_LIQ1[lndgrid,time]   
+            long_name: initial gridcell total liq content
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GPP[lndgrid,time]   
+            long_name: gross primary production
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GR[lndgrid,time]   
+            long_name: total growth respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GROSS_NMIN[lndgrid,time]   
+            long_name: gross rate of N mineralization
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float GROSS_PMIN[lndgrid,time]   
+            long_name: gross rate of P mineralization
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float H2OCAN[lndgrid,time]   
+            long_name: intercepted water
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float H2OSFC[lndgrid,time]   
+            long_name: surface water depth
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float H2OSNO[lndgrid,time]   
+            long_name: snow depth (liquid water)
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float H2OSNO_TOP[lndgrid,time]   
+            long_name: mass of snow in top snow layer
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float H2OSOI[lndgrid,levgrnd,time]   
+            long_name: volumetric soil water (vegetated landunits only)
+            units: mm3/mm3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float HC[lndgrid,time]   
+            long_name: heat content of soil/snow/lake
+            units: MJ/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float HCSOI[lndgrid,time]   
+            long_name: soil heat content
+            units: MJ/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float HEAT_FROM_AC[lndgrid,time]   
+            long_name: sensible heat flux put into canyon due to heat removed from air conditioning
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float HR[lndgrid,time]   
+            long_name: total heterotrophic respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float HR_vr[lndgrid,levdcmp,time]   
+            long_name: total vertically resolved heterotrophic respiration
+            units: gC/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float HTOP[lndgrid,time]   
+            long_name: canopy top
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float INT_SNOW[lndgrid,time]   
+            long_name: accumulated swe (vegetated landunits only)
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LABILEP[lndgrid,time]   
+            long_name: soil Labile P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LABILEP_TO_SECONDP[lndgrid,time]   
+            long_name: LABILE P TO SECONDARY MINERAL P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LABILEP_vr[lndgrid,levdcmp,time]   
+            long_name: soil labile P (vert. res.)
+            units: gp/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LAISHA[lndgrid,time]   
+            long_name: shaded projected leaf area index
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LAISUN[lndgrid,time]   
+            long_name: sunlit projected leaf area index
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LAKEICEFRAC[lndgrid,levlak,time]   
+            long_name: lake layer ice mass fraction
+            units: unitless
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LAKEICETHICK[lndgrid,time]   
+            long_name: thickness of lake ice (including physical expansion on freezing)
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LAND_UPTAKE[lndgrid,time]   
+            long_name: NEE minus LAND_USE_FLUX, negative for update
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LAND_USE_FLUX[lndgrid,time]   
+            long_name: total C emitted from land cover conversion and wood product pools
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAFC[lndgrid,time]   
+            long_name: leaf C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAFC_ALLOC[lndgrid,time]   
+            long_name: leaf C allocation
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAFC_LOSS[lndgrid,time]   
+            long_name: leaf C loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAFC_TO_LITTER[lndgrid,time]   
+            long_name: leaf C litterfall
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAFN[lndgrid,time]   
+            long_name: leaf N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAFP[lndgrid,time]   
+            long_name: leaf P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LEAF_MR[lndgrid,time]   
+            long_name: leaf maintenance respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LFC2[lndgrid,time]   
+            long_name: conversion area fraction of BET and BDT that burned
+            units: per sec
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITFALL[lndgrid,time]   
+            long_name: litterfall (leaves and fine roots)
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITHR[lndgrid,time]   
+            long_name: litter heterotrophic respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1C[lndgrid,time]   
+            long_name: LITR1 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1C_TO_SOIL1C[lndgrid,time]   
+            long_name: decomp. of litter 1 C to soil 1 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1C_vr[lndgrid,levdcmp,time]   
+            long_name: LITR1 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1N[lndgrid,time]   
+            long_name: LITR1 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: litter 1 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1N_TO_SOIL1N[lndgrid,time]   
+            long_name: decomp. of litter 1 N to soil 1 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1N_vr[lndgrid,levdcmp,time]   
+            long_name: LITR1 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1P[lndgrid,time]   
+            long_name: LITR1 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: litter 1 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1P_TO_SOIL1P[lndgrid,time]   
+            long_name: decomp. of litter 1 P to soil 1 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1P_vr[lndgrid,levdcmp,time]   
+            long_name: LITR1 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR1_HR[lndgrid,time]   
+            long_name: Het. Resp. from litter 1
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2C[lndgrid,time]   
+            long_name: LITR2 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2C_TO_SOIL2C[lndgrid,time]   
+            long_name: decomp. of litter 2 C to soil 2 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2C_vr[lndgrid,levdcmp,time]   
+            long_name: LITR2 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2N[lndgrid,time]   
+            long_name: LITR2 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: litter 2 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2N_TO_SOIL2N[lndgrid,time]   
+            long_name: decomp. of litter 2 N to soil 2 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2N_vr[lndgrid,levdcmp,time]   
+            long_name: LITR2 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2P[lndgrid,time]   
+            long_name: LITR2 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: litter 2 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2P_TO_SOIL2P[lndgrid,time]   
+            long_name: decomp. of litter 2 P to soil 2 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2P_vr[lndgrid,levdcmp,time]   
+            long_name: LITR2 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR2_HR[lndgrid,time]   
+            long_name: Het. Resp. from litter 2
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3C[lndgrid,time]   
+            long_name: LITR3 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3C_TO_SOIL3C[lndgrid,time]   
+            long_name: decomp. of litter 3 C to soil 3 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3C_vr[lndgrid,levdcmp,time]   
+            long_name: LITR3 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3N[lndgrid,time]   
+            long_name: LITR3 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: litter 3 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3N_TO_SOIL3N[lndgrid,time]   
+            long_name: decomp. of litter 3 N to soil 3 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3N_vr[lndgrid,levdcmp,time]   
+            long_name: LITR3 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3P[lndgrid,time]   
+            long_name: LITR3 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: litter 3 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3P_TO_SOIL3P[lndgrid,time]   
+            long_name: decomp. of litter 3 P to soil 3 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3P_vr[lndgrid,levdcmp,time]   
+            long_name: LITR3 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITR3_HR[lndgrid,time]   
+            long_name: Het. Resp. from litter 3
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITTERC[lndgrid,time]   
+            long_name: litter C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITTERC_HR[lndgrid,time]   
+            long_name: litter C heterotrophic respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LITTERC_LOSS[lndgrid,time]   
+            long_name: litter C loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LIVECROOTC[lndgrid,time]   
+            long_name: live coarse root C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LIVECROOTN[lndgrid,time]   
+            long_name: live coarse root N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LIVECROOTP[lndgrid,time]   
+            long_name: live coarse root P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LIVESTEMC[lndgrid,time]   
+            long_name: live stem C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LIVESTEMN[lndgrid,time]   
+            long_name: live stem N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float LIVESTEMP[lndgrid,time]   
+            long_name: live stem P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float MR[lndgrid,time]   
+            long_name: maintenance respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_LITR1C_TO_LEACHING[lndgrid,time]   
+            long_name: litter 1 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_LITR2C_TO_LEACHING[lndgrid,time]   
+            long_name: litter 2 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_LITR3C_TO_LEACHING[lndgrid,time]   
+            long_name: litter 3 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_SOIL1C_TO_LEACHING[lndgrid,time]   
+            long_name: soil 1 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_SOIL2C_TO_LEACHING[lndgrid,time]   
+            long_name: soil 2 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_SOIL3C_TO_LEACHING[lndgrid,time]   
+            long_name: soil 3 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float M_SOIL4C_TO_LEACHING[lndgrid,time]   
+            long_name: soil 4 C leaching loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NBP[lndgrid,time]   
+            long_name: net biome production, includes fire, landuse, and harvest flux, positive for sink
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NDEPLOY[lndgrid,time]   
+            long_name: total N deployed in new growth
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NDEP_TO_SMINN[lndgrid,time]   
+            long_name: atmospheric N deposition to soil mineral N
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NEE[lndgrid,time]   
+            long_name: net ecosystem exchange of carbon, includes fire, landuse, harvest, and hrv_xsmrpool flux, positive for source
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NEM[lndgrid,time]   
+            long_name: Gridcell net adjustment to NEE passed to atm. for methane production
+            units: gC/m2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NEP[lndgrid,time]   
+            long_name: net ecosystem production, excludes fire, landuse, and harvest flux, positive for sink
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NET_NMIN[lndgrid,time]   
+            long_name: net rate of N mineralization
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NET_PMIN[lndgrid,time]   
+            long_name: net rate of P mineralization
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NFIRE[lndgrid,time]   
+            long_name: fire counts valid only in Reg.C
+            units: counts/km2/sec
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NFIX_TO_SMINN[lndgrid,time]   
+            long_name: symbiotic/asymbiotic N fixation to soil mineral N
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float NPP[lndgrid,time]   
+            long_name: net primary production
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float OCCLP[lndgrid,time]   
+            long_name: soil occluded P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float OCCLP_vr[lndgrid,levdcmp,time]   
+            long_name: soil occluded P (vert. res.)
+            units: gp/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float OCDEP[lndgrid,time]   
+            long_name: total OC deposition (dry+wet) from atmosphere
+            units: kg/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float O_SCALAR[lndgrid,levdcmp,time]   
+            long_name: fraction by which decomposition is reduced due to anoxia
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PARVEGLN[lndgrid,time]   
+            long_name: absorbed par by vegetation at local noon
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PBOT[lndgrid,time]   
+            long_name: atmospheric pressure
+            units: Pa
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PCH4[lndgrid,time]   
+            long_name: atmospheric partial pressure of CH4
+            units: Pa
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PCO2[lndgrid,time]   
+            long_name: atmospheric partial pressure of CO2
+            units: Pa
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PCT_LANDUNIT[lndgrid,ltype,time]   
+            long_name: % of each landunit on topounit
+            units: %
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PCT_NAT_PFT[lndgrid,natpft,time]   
+            long_name: % of each PFT on the natural vegetation (i.e., soil) landunit
+            units: %
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PDEPLOY[lndgrid,time]   
+            long_name: total P deployed in new growth
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PDEP_TO_SMINP[lndgrid,time]   
+            long_name: atmospheric P deposition to soil mineral P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PFT_FIRE_CLOSS[lndgrid,time]   
+            long_name: total patch-level fire C loss for non-peat fires outside land-type converted region
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PFT_FIRE_NLOSS[lndgrid,time]   
+            long_name: total pft-level fire N loss
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PLANT_CALLOC[lndgrid,time]   
+            long_name: total allocated C flux
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PLANT_NDEMAND[lndgrid,time]   
+            long_name: N flux required to support initial GPP
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PLANT_NDEMAND_COL[lndgrid,time]   
+            long_name: N flux required to support initial GPP
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PLANT_PALLOC[lndgrid,time]   
+            long_name: total allocated P flux
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PLANT_PDEMAND[lndgrid,time]   
+            long_name: P flux required to support initial GPP
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PLANT_PDEMAND_COL[lndgrid,time]   
+            long_name: P flux required to support initial GPP
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float POTENTIAL_IMMOB[lndgrid,time]   
+            long_name: potential N immobilization
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float POTENTIAL_IMMOB_P[lndgrid,time]   
+            long_name: potential P immobilization
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float POT_F_DENIT[lndgrid,time]   
+            long_name: potential denitrification flux
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float POT_F_NIT[lndgrid,time]   
+            long_name: potential nitrification flux
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PRIMP[lndgrid,time]   
+            long_name: soil primary P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PRIMP_TO_LABILEP[lndgrid,time]   
+            long_name: PRIMARY MINERAL P TO LABILE P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PRIMP_vr[lndgrid,levdcmp,time]   
+            long_name: soil primary P (vert. res.)
+            units: gp/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PROD1P_LOSS[lndgrid,time]   
+            long_name: loss from 1-yr crop product pool
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PSNSHA[lndgrid,time]   
+            long_name: shaded leaf photosynthesis
+            units: umolCO2/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PSNSHADE_TO_CPOOL[lndgrid,time]   
+            long_name: C fixation from shaded canopy
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PSNSUN[lndgrid,time]   
+            long_name: sunlit leaf photosynthesis
+            units: umolCO2/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float PSNSUN_TO_CPOOL[lndgrid,time]   
+            long_name: C fixation from sunlit canopy
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float Q2M[lndgrid,time]   
+            long_name: 2m specific humidity
+            units: kg/kg
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QBOT[lndgrid,time]   
+            long_name: atmospheric specific humidity
+            units: kg/kg
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QCHARGE[lndgrid,time]   
+            long_name: aquifer recharge rate (vegetated landunits only)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QDRAI[lndgrid,time]   
+            long_name: sub-surface drainage
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QDRAI_PERCH[lndgrid,time]   
+            long_name: perched wt drainage
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QDRAI_XS[lndgrid,time]   
+            long_name: saturation excess drainage
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QDRIP[lndgrid,time]   
+            long_name: throughfall
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QFLOOD[lndgrid,time]   
+            long_name: runoff from river flooding
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QFLX_ICE_DYNBAL[lndgrid,time]   
+            long_name: ice dynamic land cover change conversion runoff flux
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QFLX_LIQ_DYNBAL[lndgrid,time]   
+            long_name: liq dynamic land cover change conversion runoff flux
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QH2OSFC[lndgrid,time]   
+            long_name: surface water runoff
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QINFL[lndgrid,time]   
+            long_name: infiltration
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QINTR[lndgrid,time]   
+            long_name: interception
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QIRRIG_GRND[lndgrid,time]   
+            long_name: Groundwater irrigation
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QIRRIG_ORIG[lndgrid,time]   
+            long_name: Original total irrigation water demand (surface + ground)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QIRRIG_REAL[lndgrid,time]   
+            long_name: actual water added through irrigation (surface + ground)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QIRRIG_SURF[lndgrid,time]   
+            long_name: Surface water irrigation
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QIRRIG_WM[lndgrid,time]   
+            long_name: Surface water irrigation demand sent to MOSART/WM
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QOVER[lndgrid,time]   
+            long_name: surface runoff
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QOVER_LAG[lndgrid,time]   
+            long_name: time-lagged surface runoff for soil columns
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QRGWL[lndgrid,time]   
+            long_name: surface runoff at glaciers (liquid only), wetlands, lakes
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QRUNOFF[lndgrid,time]   
+            long_name: total liquid runoff (does not include QSNWCPICE)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QRUNOFF_NODYNLNDUSE[lndgrid,time]   
+            long_name: total liquid runoff (does not include QSNWCPICE) not including correction for land use change
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QRUNOFF_R[lndgrid,time]   
+            long_name: Rural total runoff
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QRUNOFF_U[lndgrid,time]   
+            long_name: Urban total runoff
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QSNOMELT[lndgrid,time]   
+            long_name: snow melt
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QSNWCPICE[lndgrid,time]   
+            long_name: excess snowfall due to snow capping
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QSNWCPICE_NODYNLNDUSE[lndgrid,time]   
+            long_name: excess snowfall due to snow capping not including correction for land use change
+            units: mm H2O/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QSOIL[lndgrid,time]   
+            long_name: Ground evaporation (soil/snow evaporation + soil/snow sublimation - dew)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QVEGE[lndgrid,time]   
+            long_name: canopy evaporation
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float QVEGT[lndgrid,time]   
+            long_name: canopy transpiration
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RAIN[lndgrid,time]   
+            long_name: atmospheric rain
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RETRANSN[lndgrid,time]   
+            long_name: plant pool of retranslocated N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RETRANSN_TO_NPOOL[lndgrid,time]   
+            long_name: deployment of retranslocated N
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RETRANSP[lndgrid,time]   
+            long_name: plant pool of retranslocated P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RETRANSP_TO_PPOOL[lndgrid,time]   
+            long_name: deployment of retranslocated P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RH2M[lndgrid,time]   
+            long_name: 2m relative humidity
+            units: %
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RH2M_R[lndgrid,time]   
+            long_name: Rural 2m specific humidity
+            units: %
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RH2M_U[lndgrid,time]   
+            long_name: Urban 2m relative humidity
+            units: %
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float RR[lndgrid,time]   
+            long_name: root respiration (fine root MR + total root GR)
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SABG[lndgrid,time]   
+            long_name: solar rad absorbed by ground
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SABG_PEN[lndgrid,time]   
+            long_name: Rural solar rad penetrating top soil or snow layer
+            units: watt/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SABV[lndgrid,time]   
+            long_name: solar rad absorbed by veg
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SCALARAVG_vr[lndgrid,levdcmp,time]   
+            long_name: average of decomposition scalar
+            units: fraction
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SECONDP[lndgrid,time]   
+            long_name: soil secondary P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SECONDP_TO_LABILEP[lndgrid,time]   
+            long_name: SECONDARY MINERAL P TO LABILE P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SECONDP_TO_OCCLP[lndgrid,time]   
+            long_name: SECONDARY MINERAL P TO OCCLUDED P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SECONDP_vr[lndgrid,levdcmp,time]   
+            long_name: soil secondary P (vert. res.)
+            units: gp/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SEEDC_GRC[lndgrid,time]   
+            long_name: pool for seeding new PFTs via dynamic landcover
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN[lndgrid,time]   
+            long_name: soil mineral N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_NPOOL[lndgrid,time]   
+            long_name: deployment of soil mineral N uptake
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_PLANT[lndgrid,time]   
+            long_name: plant uptake of soil mineral N
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_SOIL1N_L1[lndgrid,time]   
+            long_name: mineral N flux for decomp. of LITR1to SOIL1
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_SOIL2N_L2[lndgrid,time]   
+            long_name: mineral N flux for decomp. of LITR2to SOIL2
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_SOIL2N_S1[lndgrid,time]   
+            long_name: mineral N flux for decomp. of SOIL1to SOIL2
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_SOIL3N_L3[lndgrid,time]   
+            long_name: mineral N flux for decomp. of LITR3to SOIL3
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_SOIL3N_S2[lndgrid,time]   
+            long_name: mineral N flux for decomp. of SOIL2to SOIL3
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINN_TO_SOIL4N_S3[lndgrid,time]   
+            long_name: mineral N flux for decomp. of SOIL3to SOIL4
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP[lndgrid,time]   
+            long_name: soil mineral P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_LEACHED[lndgrid,time]   
+            long_name: soil mineral P pool loss to leaching
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_PLANT[lndgrid,time]   
+            long_name: plant uptake of soil mineral P
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_PPOOL[lndgrid,time]   
+            long_name: deployment of soil mineral P uptake
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_SOIL1P_L1[lndgrid,time]   
+            long_name: mineral P flux for decomp. of LITR1to SOIL1
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_SOIL2P_L2[lndgrid,time]   
+            long_name: mineral P flux for decomp. of LITR2to SOIL2
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_SOIL2P_S1[lndgrid,time]   
+            long_name: mineral P flux for decomp. of SOIL1to SOIL2
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_SOIL3P_L3[lndgrid,time]   
+            long_name: mineral P flux for decomp. of LITR3to SOIL3
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_SOIL3P_S2[lndgrid,time]   
+            long_name: mineral P flux for decomp. of SOIL2to SOIL3
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_TO_SOIL4P_S3[lndgrid,time]   
+            long_name: mineral P flux for decomp. of SOIL3to SOIL4
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMINP_vr[lndgrid,levdcmp,time]   
+            long_name: soil mineral P (vert. res.)
+            units: gp/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMIN_NH4[lndgrid,time]   
+            long_name: soil mineral NH4
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMIN_NH4_vr[lndgrid,levdcmp,time]   
+            long_name: soil mineral NH4 (vert. res.)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMIN_NO3[lndgrid,time]   
+            long_name: soil mineral NO3
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMIN_NO3_LEACHED[lndgrid,time]   
+            long_name: soil NO3 pool loss to leaching
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMIN_NO3_RUNOFF[lndgrid,time]   
+            long_name: soil NO3 pool loss to runoff
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SMIN_NO3_vr[lndgrid,levdcmp,time]   
+            long_name: soil mineral NO3 (vert. res.)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOBCMCL[lndgrid,time]   
+            long_name: mass of BC in snow column
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOBCMSL[lndgrid,time]   
+            long_name: mass of BC in top snow layer
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNODSTMCL[lndgrid,time]   
+            long_name: mass of dust in snow column
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNODSTMSL[lndgrid,time]   
+            long_name: mass of dust in top snow layer
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOINTABS[lndgrid,time]   
+            long_name: Percent of incoming solar absorbed by lower snow layers
+            units: %
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOOCMCL[lndgrid,time]   
+            long_name: mass of OC in snow column
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOOCMSL[lndgrid,time]   
+            long_name: mass of OC in top snow layer
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOW[lndgrid,time]   
+            long_name: atmospheric snow
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOWDP[lndgrid,time]   
+            long_name: gridcell mean snow height
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOWICE[lndgrid,time]   
+            long_name: snow ice
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOWLIQ[lndgrid,time]   
+            long_name: snow liquid water
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOW_DEPTH[lndgrid,time]   
+            long_name: snow height of snow covered area
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOW_SINKS[lndgrid,time]   
+            long_name: snow sinks (liquid water)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SNOW_SOURCES[lndgrid,time]   
+            long_name: snow sources (liquid water)
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1C[lndgrid,time]   
+            long_name: SOIL1 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1C_TO_SOIL2C[lndgrid,time]   
+            long_name: decomp. of soil 1 C to soil 2 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1C_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL1 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1N[lndgrid,time]   
+            long_name: SOIL1 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 1 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1N_TO_SOIL2N[lndgrid,time]   
+            long_name: decomp. of soil 1 N to soil 2 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1N_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL1 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1P[lndgrid,time]   
+            long_name: SOIL1 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 1 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1P_TO_SOIL2P[lndgrid,time]   
+            long_name: decomp. of soil 1 P to soil 2 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1P_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL1 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL1_HR[lndgrid,time]   
+            long_name: Het. Resp. from soil 1
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2C[lndgrid,time]   
+            long_name: SOIL2 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2C_TO_SOIL3C[lndgrid,time]   
+            long_name: decomp. of soil 2 C to soil 3 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2C_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL2 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2N[lndgrid,time]   
+            long_name: SOIL2 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 2 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2N_TO_SOIL3N[lndgrid,time]   
+            long_name: decomp. of soil 2 N to soil 3 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2N_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL2 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2P[lndgrid,time]   
+            long_name: SOIL2 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 2 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2P_TO_SOIL3P[lndgrid,time]   
+            long_name: decomp. of soil 2 P to soil 3 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2P_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL2 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL2_HR[lndgrid,time]   
+            long_name: Het. Resp. from soil 2
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3C[lndgrid,time]   
+            long_name: SOIL3 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3C_TO_SOIL4C[lndgrid,time]   
+            long_name: decomp. of soil 3 C to soil 4 C
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3C_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL3 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3N[lndgrid,time]   
+            long_name: SOIL3 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 3 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3N_TO_SOIL4N[lndgrid,time]   
+            long_name: decomp. of soil 3 N to soil 4 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3N_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL3 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3P[lndgrid,time]   
+            long_name: SOIL3 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 3 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3P_TO_SOIL4P[lndgrid,time]   
+            long_name: decomp. of soil 3 P to soil 4 N
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3P_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL3 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL3_HR[lndgrid,time]   
+            long_name: Het. Resp. from soil 3
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4C[lndgrid,time]   
+            long_name: SOIL4 C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4C_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL4 C (vertically resolved)
+            units: gC/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4N[lndgrid,time]   
+            long_name: SOIL4 N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4N_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 4 N tendency due to vertical transport
+            units: gN/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4N_TO_SMINN[lndgrid,time]   
+            long_name: mineral N flux for decomp. of SOIL4
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4N_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL4 N (vertically resolved)
+            units: gN/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4P[lndgrid,time]   
+            long_name: SOIL4 P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4P_TNDNCY_VERT_TRANS[lndgrid,levdcmp,time]   
+            long_name: soil 4 P tendency due to vertical transport
+            units: gP/m^3/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4P_TO_SMINP[lndgrid,time]   
+            long_name: mineral P flux for decomp. of SOIL4
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4P_vr[lndgrid,levdcmp,time]   
+            long_name: SOIL4 P (vertically resolved)
+            units: gP/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOIL4_HR[lndgrid,time]   
+            long_name: Het. Resp. from soil 4
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILC[lndgrid,time]   
+            long_name: soil C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILC_HR[lndgrid,time]   
+            long_name: soil C heterotrophic respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILC_LOSS[lndgrid,time]   
+            long_name: soil C loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILICE[lndgrid,levgrnd,time]   
+            long_name: soil ice (vegetated landunits only)
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILICE_ICE[lndgrid,levgrnd,time]   
+            long_name: soil ice (ice landunits only)
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILLIQ[lndgrid,levgrnd,time]   
+            long_name: soil liquid water (vegetated landunits only)
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILLIQ_ICE[lndgrid,levgrnd,time]   
+            long_name: soil liquid water (ice landunits only)
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILPSI[lndgrid,levgrnd,time]   
+            long_name: soil water potential in each soil layer
+            units: MPa
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOILWATER_10CM[lndgrid,time]   
+            long_name: soil liquid water + ice in top 10cm of soil (veg landunits only)
+            standard_name: mass_content_of_water_in_soil_layer
+            units: kg/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOLUTIONP[lndgrid,time]   
+            long_name: soil solution P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOLUTIONP_vr[lndgrid,levdcmp,time]   
+            long_name: soil solution P (vert. res.)
+            units: gp/m^3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOMHR[lndgrid,time]   
+            long_name: soil organic matter heterotrophic respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SOM_C_LEACHED[lndgrid,time]   
+            long_name: total flux of C from SOM pools due to leaching
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SR[lndgrid,time]   
+            long_name: total soil respiration (HR + root resp)
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float STORVEGC[lndgrid,time]   
+            long_name: stored vegetation carbon, excluding cpool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float STORVEGN[lndgrid,time]   
+            long_name: stored vegetation nitrogen
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float STORVEGP[lndgrid,time]   
+            long_name: stored vegetation phosphorus
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SUPPLEMENT_TO_SMINN[lndgrid,time]   
+            long_name: supplemental N supply
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SUPPLEMENT_TO_SMINP[lndgrid,time]   
+            long_name: supplemental P supply
+            units: gP/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SUPPLY[lndgrid,time]   
+            long_name: runoff supply for land use
+            units: mm/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SoilAlpha[lndgrid,time]   
+            long_name: factor limiting ground evap
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float SoilAlpha_U[lndgrid,time]   
+            long_name: urban factor limiting ground evap
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TAUX[lndgrid,time]   
+            long_name: zonal surface stress
+            units: kg/m/s^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TAUY[lndgrid,time]   
+            long_name: meridional surface stress
+            units: kg/m/s^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TBOT[lndgrid,time]   
+            long_name: atmospheric air temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TBUILD[lndgrid,time]   
+            long_name: internal urban building temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TCS_MONTH_BEGIN[lndgrid,time]   
+            long_name: total carbon storage at the beginning of a month
+            units: mm
+            cell_methods: time: point
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TCS_MONTH_END[lndgrid,time]   
+            long_name: total carbon storage at the end of a month
+            units: mm
+            cell_methods: time: point
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TG[lndgrid,time]   
+            long_name: ground temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TG_R[lndgrid,time]   
+            long_name: Rural ground temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TG_U[lndgrid,time]   
+            long_name: Urban ground temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TH2OSFC[lndgrid,time]   
+            long_name: surface water temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float THBOT[lndgrid,time]   
+            long_name: atmospheric air potential temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TKE1[lndgrid,time]   
+            long_name: top lake level eddy thermal conductivity
+            units: W/(mK)
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TLAI[lndgrid,time]   
+            long_name: total projected leaf area index
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TLAKE[lndgrid,levlak,time]   
+            long_name: lake temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTCOLC[lndgrid,time]   
+            long_name: total column carbon, incl veg and cpool but excl product pools
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTCOLCH4[lndgrid,time]   
+            long_name: total belowground CH4, (0 for non-lake special landunits)
+            units: gC/m2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTCOLN[lndgrid,time]   
+            long_name: total column-level N but excl product pools
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTCOLP[lndgrid,time]   
+            long_name: total column-level P but excl product pools
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTECOSYSC[lndgrid,time]   
+            long_name: total ecosystem carbon, incl veg but excl cpool but excl product pools
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTECOSYSN[lndgrid,time]   
+            long_name: total ecosystem N but excl product pools
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTECOSYSP[lndgrid,time]   
+            long_name: total ecosystem P but excl product pools
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTLITC[lndgrid,time]   
+            long_name: total litter carbon
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTLITC_1m[lndgrid,time]   
+            long_name: total litter carbon to 1 meter depth
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTLITN[lndgrid,time]   
+            long_name: total litter N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTLITP[lndgrid,time]   
+            long_name: total litter P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTLITP_1m[lndgrid,time]   
+            long_name: total litter P to 1 meter
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTPFTC[lndgrid,time]   
+            long_name: total patch-level carbon, including cpool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTPFTN[lndgrid,time]   
+            long_name: total PFT-level nitrogen
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTPFTP[lndgrid,time]   
+            long_name: total PFT-level phosphorus
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTSOMC[lndgrid,time]   
+            long_name: total soil organic matter carbon
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTSOMC_1m[lndgrid,time]   
+            long_name: total soil organic matter carbon to 1 meter depth
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTSOMN[lndgrid,time]   
+            long_name: total soil organic matter N
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTSOMP[lndgrid,time]   
+            long_name: total soil organic matter P
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTSOMP_1m[lndgrid,time]   
+            long_name: total soil organic matter P to 1 meter
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTVEGC[lndgrid,time]   
+            long_name: total vegetation carbon, excluding cpool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTVEGC_ABG[lndgrid,time]   
+            long_name: total aboveground vegetation carbon, excluding cpool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTVEGN[lndgrid,time]   
+            long_name: total vegetation nitrogen
+            units: gN/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TOTVEGP[lndgrid,time]   
+            long_name: total vegetation phosphorus
+            units: gP/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TREFMNAV[lndgrid,time]   
+            long_name: daily minimum of average 2-m temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TREFMNAV_R[lndgrid,time]   
+            long_name: Rural daily minimum of average 2-m temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TREFMNAV_U[lndgrid,time]   
+            long_name: Urban daily minimum of average 2-m temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TREFMXAV[lndgrid,time]   
+            long_name: daily maximum of average 2-m temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TREFMXAV_R[lndgrid,time]   
+            long_name: Rural daily maximum of average 2-m temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TREFMXAV_U[lndgrid,time]   
+            long_name: Urban daily maximum of average 2-m temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSA[lndgrid,time]   
+            long_name: 2m air temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSAI[lndgrid,time]   
+            long_name: total projected stem area index
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSA_R[lndgrid,time]   
+            long_name: Rural 2m air temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSA_U[lndgrid,time]   
+            long_name: Urban 2m air temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSOI[lndgrid,levgrnd,time]   
+            long_name: soil temperature (vegetated landunits only)
+            standard_name: soil_temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSOI_10CM[lndgrid,time]   
+            long_name: soil temperature in top 10cm of soil
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TSOI_ICE[lndgrid,levgrnd,time]   
+            long_name: soil temperature (ice landunits only)
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TV[lndgrid,time]   
+            long_name: vegetation temperature
+            units: K
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TWS[lndgrid,time]   
+            long_name: total water storage
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TWS_MONTH_BEGIN[lndgrid,time]   
+            long_name: total water storage at the beginning of a month
+            units: mm
+            cell_methods: time: point
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float TWS_MONTH_END[lndgrid,time]   
+            long_name: total water storage at the end of a month
+            units: mm
+            cell_methods: time: point
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float T_SCALAR[lndgrid,levdcmp,time]   
+            long_name: temperature inhibition of decomposition
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float U10[lndgrid,time]   
+            long_name: 10-m wind
+            units: m/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float URBAN_AC[lndgrid,time]   
+            long_name: urban air conditioning flux
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float URBAN_HEAT[lndgrid,time]   
+            long_name: urban heating flux
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float VCMAX25TOP[lndgrid,time]   
+            long_name: vcmax at top canopy at 25oC
+            units: umolCO2/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float VOLR[lndgrid,time]   
+            long_name: river channel total water storage
+            units: m3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float VOLRMCH[lndgrid,time]   
+            long_name: river channel main channel water storage
+            units: m3
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WA[lndgrid,time]   
+            long_name: water in the unconfined aquifer (vegetated landunits only)
+            units: mm
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WASTEHEAT[lndgrid,time]   
+            long_name: sensible heat flux from heating/cooling sources of urban waste heat
+            units: W/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WF[lndgrid,time]   
+            long_name: soil water as frac. of whc for top 0.05 m
+            units: proportion
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WIND[lndgrid,time]   
+            long_name: atmospheric wind velocity magnitude
+            units: m/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WOODC[lndgrid,time]   
+            long_name: wood C
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WOODC_ALLOC[lndgrid,time]   
+            long_name: wood C eallocation
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WOODC_LOSS[lndgrid,time]   
+            long_name: wood C loss
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WOOD_HARVESTC[lndgrid,time]   
+            long_name: wood harvest carbon (to product pools)
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WOOD_HARVESTN[lndgrid,time]   
+            long_name: wood harvest N (to product pools)
+            units: gN/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float WTGQ[lndgrid,time]   
+            long_name: surface tracer conductance
+            units: m/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float W_SCALAR[lndgrid,levdcmp,time]   
+            long_name: Moisture (dryness) inhibition of decomposition
+            units: 1
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float XR[lndgrid,time]   
+            long_name: total excess respiration
+            units: gC/m^2/s
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float XSMRPOOL[lndgrid,time]   
+            long_name: temporary photosynthate C pool
+            units: gC/m^2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ZBOT[lndgrid,time]   
+            long_name: atmospheric reference height
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ZWT[lndgrid,time]   
+            long_name: water table depth (vegetated landunits only)
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ZWT_CH4_UNSAT[lndgrid,time]   
+            long_name: depth of water table for methane production used in non-inundated area
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float ZWT_PERCH[lndgrid,time]   
+            long_name: perched water table depth (vegetated landunits only)
+            units: m
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float cn_scalar[lndgrid,time]   
+            long_name: N limitation factor
+            units: 
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float cp_scalar[lndgrid,time]   
+            long_name: P limitation factor
+            units: 
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float leaf_npimbalance[lndgrid,time]   
+            long_name: leaf np imbalance partial C partial P/partial C partial N
+            units: gN/gP
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float nlim_m[lndgrid,time]   
+            long_name: runmean N limitation factor
+            units: 
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float o2_decomp_depth_unsat[lndgrid,levgrnd,time]   
+            long_name: o2_decomp_depth_unsat
+            units: mol/m3/2
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float plim_m[lndgrid,time]   
+            long_name: runmean P limitation factor
+            units: 
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float water_scalar[lndgrid,time]   
+            long_name: water limitation factor for plant dynamic allocation
+            units: 
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+        float wlim_m[lndgrid,time]   
+            long_name: runmean water limitation factor for plant dynamic allocation
+            units: 
+            cell_methods: time: mean
+            _FillValue: 9.99999961690316e+35
+            missing_value: 9.99999961690316e+35
+
+     21 dimensions:
+        lndgrid  Size:2112 (no dimvar)
+        gridcell  Size:2112 (no dimvar)
+        topounit  Size:2112 (no dimvar)
+        landunit  Size:2117 (no dimvar)
+        column  Size:2117 (no dimvar)
+        pft  Size:29573 (no dimvar)
+        levgrnd  Size:15 
+            long_name: coordinate soil levels
+            units: m
+        levsoi  Size:10 
+            long_name: coordinate soil levels (equivalent to top nlevsoi levels of levgrnd)
+            units: m
+        levurb  Size:5 (no dimvar)
+        levlak  Size:10 
+            long_name: coordinate lake levels
+            units: m
+        numrad  Size:2 (no dimvar)
+        month  Size:12 (no dimvar)
+        levsno  Size:5 (no dimvar)
+        ltype  Size:9 (no dimvar)
+        nvegwcs  Size:4 (no dimvar)
+        natpft  Size:14 (no dimvar)
+        string_length  Size:16 (no dimvar)
+        levdcmp  Size:15 
+            long_name: coordinate soil levels
+            units: m
+        levtrc  Size:10 (no dimvar)
+        hist_interval  Size:2 (no dimvar)
+        time  Size:365   *** is unlimited *** 
+            long_name: time
+            units: days since 1850-01-01 00:00:00
+            calendar: noleap
+            bounds: time_bounds
+
+    29 global attributes:
+        title: ELM History file information
+        source: E3SM Land Model
+        source_id: 1fdff7e
+        product: model-output
+        realm: land
+        case: ELM2022_AKSP_CNLwatershed_ICB20TRCNPRDCTCBC
+        username: f9y
+        hostname: cades
+        git_version: 1fdff7e
+        history: created on 03/07/23 04:30:05
+        institution_id: E3SM-Project
+        institution: LLNL (Lawrence Livermore National Laboratory, Livermore, CA 94550, USA); ANL (Argonne National Laboratory, Argonne, IL 60439, USA); BNL (Brookhaven National Laboratory, Upton, NY 11973, USA); LANL (Los Alamos National Laboratory, Los Alamos, NM 87545, USA); LBNL (Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA); ORNL (Oak Ridge National Laboratory, Oak Ridge, TN 37831, USA); PNNL (Pacific Northwest National Laboratory, Richland, WA 99352, USA); SNL (Sandia National Laboratories, Albuquerque, NM 87185, USA). Mailing address: LLNL Climate Program, c/o David C. Bader, Principal Investigator, L-103, 7000 East Avenue, Livermore, CA 94550, USA
+        contact: e3sm-data-support@listserv.llnl.gov
+        Conventions: CF-1.7
+        comment: NOTE: None of the variables are weighted by land fraction!
+        Surface_dataset: surfdata_arcticpft_100mx100m.nc
+        Initial_conditions_dataset: ELM2022_AKSP_CNLwatershed_ICB1850CNPRDCTCBC.elm.r.0601-01-01-00000.nc
+        PFT_physiological_constants_dataset: clm_params_c180524-sub12+_updated2020b.nc
+        ltype_vegetated_or_bare_soil: 1
+        ltype_crop: 2
+        ltype_landice: 3
+        ltype_landice_multiple_elevation_classes: 4
+        ltype_deep_lake: 5
+        ltype_wetland: 6
+        ltype_urban_tbd: 7
+        ltype_urban_hd: 8
+        ltype_urban_md: 9
+        Time_constant_3Dvars_filename: ./ELM2022_AKSP_CNLwatershed_ICB20TRCNPRDCTCBC.elm.h0.1850-01-01-00000.nc
+        Time_constant_3Dvars: ZSOI:DZSOI:WATSAT:SUCSAT:BSW:HKSAT:ZLAKE:DZLAKE
