@@ -1,0 +1,1120 @@
+File ~/NGEE_modeling/ELM_ArcticPFT/1_Runs/Default_PFT/clm_params_c180524.nc (NC_FORMAT_CLASSIC):
+
+     294 variables (excluding dimension variables):
+        char pftname[string_length,pft]   
+            units: unitless
+            long_name: Description of plant type
+        double decompmicc_patch_vr[levgrnd,pft]   
+            long_name: pft specific soil microbial decomposer density
+            unit: gC/m3
+        double roota_par[pft]   
+            units: 1/m
+            long_name: CLM rooting distribution parameter
+            coordinates: pftname
+        double cpha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double pftpar28[pft]   
+            units: degrees_Celsius
+            long_name: Minimum coldest monthly mean temperature
+            coordinates: pftname
+            _FillValue: 9999.9
+        double kcha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double woody[pft]   
+            flag_meanings: NON_woody woody
+            coordinates: pftname
+            valid_range: 0
+             valid_range: 1
+            long_name: Binary woody lifeform flag
+            flag_values: 0
+             flag_values: 1
+            units: logical flag
+        double pftpar30[pft]   
+            units: degree_C_days
+            long_name: Minimum growing degree days (>= 5 degree Celsius)
+            coordinates: pftname
+        double pftpar31[pft]   
+            units: degrees_Celsius
+            long_name: Upper limit of temperature of the warmest month (twmax)
+            coordinates: pftname
+            _FillValue: 1000
+        double cc_other[pft]   
+            units: 0 to 1
+            long_name: Combustion completeness factor for other plant
+            _FillValue: -999.99
+        double graincp[pft]   
+            units: gC/gP
+            long_name: grain C:P 
+        double fm_dstem[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for dead stem
+            _FillValue: -999.99
+        double c3psn[pft]   
+            flag_meanings: C4 C3
+            coordinates: pftname
+            valid_range: 0
+             valid_range: 1
+            long_name: Photosynthetic pathway
+            flag_values: 0
+             flag_values: 1
+            units: flag
+        double bfact[pft]   
+            units: unitless
+            long_name: Exponential factor used in CNAllocation for fraction allocated to leaf
+            coordinates: pftname
+            _FillValue: 0
+        double baset[pft]   
+            units: C
+            long_name: Base Temperature, parameter used in accFlds
+            coordinates: pftname
+        double fleafcn[pft]   
+            units: gC/gN
+            long_name: Leaf C:N during organ fill
+            coordinates: pftname
+        short pftnum[pft]   
+            units: unitless
+            long_name: Plant Functional Type number
+            coordinates: pftname
+        double graincn[pft]   
+            units: gC/gN
+            long_name: Grain C:N
+            coordinates: pftname
+            _FillValue: 0
+        double croot_stem[pft]   
+            units: gC/gC
+            long_name: Allocation parameter: new coarse root C per new stem C
+            coordinates: pftname
+        double presharv[pft]   
+            units: unitless
+            long_name: porportion of residue harvested with grain
+        double smpsc[pft]   
+            units: mm
+            long_name: Soil water potential at full stomatal closure
+            coordinates: pftname
+        double declfact[pft]   
+            units: unitless
+            long_name: Decline factor for gddmaturity used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double KM_PLANT_NO3[pft]   
+            long_name: plant NO3 maximum uptake affinity
+            unit: gN/m3
+        double cc_lstem[pft]   
+            units: 0 to 1
+            long_name: Combustion completeness factor for live stem
+            _FillValue: -999.99
+        double allconsl[pft]   
+            units: unitless
+            long_name: Leaf Allocation coefficient parameter power used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double dsladlai[pft]   
+            units: m^2/gC
+            long_name: Through canopy, projected area basis: dSLA/dLAI
+            coordinates: pftname
+        double smpso[pft]   
+            units: mm
+            long_name: Soil water potential at full stomatal opening
+            coordinates: pftname
+        double tpuhd[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double frootcn_obs[pft]   
+            long_name: fine root CN ratio
+            unit: gC/gN
+        double pftpar29[pft]   
+            units: degrees_Celsius
+            long_name: Maximum coldest monthly mean temperature
+            coordinates: pftname
+            _FillValue: 1000
+        double tpuha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double gddmin[pft]   
+            units: unitless
+            long_name: Minimim growing degree days used in CNPhenology
+            coordinates: pftname
+            _FillValue: 0
+        double convfact[pft]   
+            long_name: conversion factor from gC/m2 to bu/acre
+        double pftpar20[pft]   
+            units: m2
+            long_name: Tree maximum crown area
+            coordinates: pftname
+            _FillValue: 9999.9
+        double froot_leaf[pft]   
+            units: gC/gC
+            long_name: Allocation parameter: new fine root C per new leaf C
+            coordinates: pftname
+        double rholnir[pft]   
+            units: fraction
+            long_name: Leaf reflectance: near-IR
+            coordinates: pftname
+        double fyield[pft]   
+            units: unitless
+            long_name: fraction of grain that is actually harvested
+        double qe[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double KM_PLANT_NH4[pft]   
+            long_name: plant NH4 maximum uptake affinity
+            unit: gN/m3
+        double slatop[pft]   
+            units: m^2/gC
+            long_name: Specific Leaf Area (SLA) at top of canopy, projected area basis
+            coordinates: pftname
+        double root_dmx[pft]   
+            units: m
+            long_name: maximum rooting depth of crops
+        double fsr_pft[pft]   
+            units: m/s
+            long_name: Fire spread rate
+            _FillValue: -999.99
+        double evergreen[pft]   
+            units: logical flag
+            long_name: Binary flag for evergreen leaf habit
+            flag_values: 0
+             flag_values: 1
+            flag_meanings: NON-evergreen evergreen
+            coordinates: pftname
+        double ztopmx[pft]   
+            units: m
+            long_name: Canopy top coefficient used in CNVegStructUpdate
+            coordinates: pftname
+            _FillValue: 0
+        double fstemcn[pft]   
+            units: gC/gN
+            long_name: Stem C:N during organ fill
+            coordinates: pftname
+        double lflitcp[pft]   
+            units: gC/gP
+            long_name: leaf litter  C:P 
+            coordinates: pftname
+        double s_vc[pft]   
+            long_name: slope of vcmax~leafcn relationship
+            unit: umol CO2/m2/s per leaf N content
+        double crop[pft]   
+            flag_meanings: NOT_crop crop_PFT
+            coordinates: pftname
+            valid_range: 0
+             valid_range: 1
+            long_name: Binary crop PFT flag:
+            flag_values: 0
+             flag_values: 1
+            units: logical flag
+        double fr_fcel[pft]   
+            units: fraction
+            long_name: Fine root litter cellulose fraction
+            coordinates: pftname
+        double grnfill[pft]   
+            units: unitless
+            long_name: Grain fill parameter used in CNPhenology
+            coordinates: pftname
+            _FillValue: 0
+        double lflitcn[pft]   
+            units: gC/gN
+            long_name: Leaf litter C:N
+            coordinates: pftname
+        double bbbopt[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double arooti[pft]   
+            units: unitless
+            long_name: Root Allocation coefficient parameter used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double nstor[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double fcur[pft]   
+            units: fraction
+            long_name: Allocation parameter: fraction of allocation that goes to currently displayed growth, remainder to storage
+            coordinates: pftname
+        double fm_leaf[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for leaf
+            _FillValue: -999.99
+        double stress_decid[pft]   
+            flag_meanings: NOT stress_decidious
+            coordinates: pftname
+            valid_range: 0
+             valid_range: 1
+            long_name: Binary flag for stress-deciduous leaf habit
+            flag_values: 0
+             flag_values: 1
+            units: logical flag
+        double arootf[pft]   
+            units: unitless
+            long_name: Root Allocation coefficient parameter used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double pprod100[pft]   
+            units: fraction
+            long_name: Deadstem proportions to send to 100 year product pool
+            coordinates: pftname
+            comment: pconv+pprod10+pprod100 must sum to 1.0
+            valid_range: 0
+             valid_range: 1
+        double fm_droot[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for dead roots
+            _FillValue: -999.99
+        double theta_cj[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double aleaff[pft]   
+            units: unitless
+            long_name: Leaf Allocation coefficient parameter used in CNAllocationn
+            coordinates: pftname
+        double leafcn_obs[pft]   
+            long_name: leaf CN ratio
+            unit: gC/gN
+        double fd_pft[pft]   
+            units: hr
+            long_name: Fire duration
+            _FillValue: -999.99
+        double min_planting_temp[pft]   
+            units: K
+            long_name: Average 5 day daily minimum temperature needed for planting
+            coordinates: pftname
+            comment: From AGROIBIS derived from EPIC model parameterizations
+            _FillValue: 1000
+        double flivewd[pft]   
+            units: fraction
+            long_name: Allocation parameter: fraction of new wood that is live (phloem and ray parenchyma)
+            coordinates: pftname
+        double fm_lroot[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for live roots
+            _FillValue: -999.99
+        double lmrse[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double grperc[pft]   
+            units: unitless
+            long_name: Growth respiration factor
+            coordinates: pftname
+        double fnr[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double vcmaxhd[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double livewdcp[pft]   
+            units: gC/gP
+            long_name: live wood C:P 
+            coordinates: pftname
+        double vcmaxha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double livewdcn[pft]   
+            units: gC/gN
+            long_name: Live wood (phloem and ray parenchyma) C:N
+            coordinates: pftname
+        double fm_lstem[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for live stem
+            _FillValue: -999.99
+        double i_vc[pft]   
+            long_name: intercept of vcmax~leafcn relationship
+            unit: umol CO2/m2/s
+        double lf_flig[pft]   
+            units: fraction
+            long_name: Leaf litter lignin fraction
+            coordinates: pftname
+        double taulnir[pft]   
+            units: fraction
+            long_name: Leaf transmittance: near-IR
+            coordinates: pftname
+        double xl[pft]   
+            units: unitless
+            long_name: Leaf/stem orientation index
+            coordinates: pftname
+            valid_range: -1
+             valid_range: 1
+        double dleaf[pft]   
+            units: m
+            long_name: Characteristic leaf dimension
+            coordinates: pftname
+        double livewdcn_obs[pft]   
+            long_name: live wood CN ratio
+            unit: gC/gN
+        int max_NH_planting_date[pft]   
+            units: YYYYMMDD
+            _FillValue: 0
+            coordinates: pftname
+            comment: Typical U.S. latest planting dates according to AgroIBIS: Maize May 10th; soybean Jun 20th; spring wheat mid-May; winter wheat early Nov.
+            long_name: Maximum planting date for the Northern Hemipsphere
+        double lf_fcel[pft]   
+            units: fraction
+            long_name: Leaf litter cellulose fraction
+            coordinates: pftname
+        double KM_PLANT_P[pft]   
+            long_name: plant POx maximum uptake affinity
+            unit: gP/m3
+        double froot_long[pft]   
+            units: years
+            long_name: Leaf longevity
+            coordinates: pftname
+        double leafcn[pft]   
+            units: gC/gN
+            long_name: Leaf C:N
+            coordinates: pftname
+        double rhosvis[pft]   
+            units: fraction
+            long_name: Stem reflectance: visible
+            coordinates: pftname
+        double flnr[pft]   
+            units: fraction
+            long_name: Fraction of leaf N in Rubisco enzyme
+            coordinates: pftname
+        double grpnow[pft]   
+            units: unitless
+            long_name: Growth respiration factor
+            coordinates: pftname
+        double season_decid[pft]   
+            units: logical flag
+            long_name: Binary flag for seasonal-deciduous leaf habit
+            flag_values: 0
+             flag_values: 1
+            flag_meanings: NOT seasonal-deciduous
+            coordinates: pftname
+        double leafcp[pft]   
+            units: gC/gP
+            long_name: leaf C:P 
+            coordinates: pftname
+        double tausvis[pft]   
+            units: fraction
+            long_name: Stem transmittance: visible
+            coordinates: pftname
+        double planting_temp[pft]   
+            units: K
+            long_name: Average 10 day temperature needed for planting
+            coordinates: pftname
+            comment: From AGROIBIS derived from EPIC model parameterizations
+            _FillValue: 1000
+        double br_xr[pft]   
+            units: gC/gN/s
+            long_name: Base rate for maintenance respiration
+            coordinates: pftname
+        double fr_flab[pft]   
+            units: fraction
+            long_name: Fine root litter labile fraction
+            coordinates: pftname
+        double frootcp[pft]   
+            units: gC/gP
+            long_name: fine root C:P 
+            coordinates: pftname
+        double mbbopt[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double rholvis[pft]   
+            units: fraction
+            long_name: Leaf reflectance: visible
+            coordinates: pftname
+        double z0mr[pft]   
+            units: unitless
+            long_name: Ratio of momentum roughness length to canopy top height
+            coordinates: pftname
+        double frootcn[pft]   
+            units: gC/gN
+            long_name: Fine root C:N
+            coordinates: pftname
+        int max_SH_planting_date[pft]   
+            units: YYYYMMDD
+            _FillValue: 0
+            coordinates: pftname
+            comment: Same as max_NH_planting_date, but offset by six months
+            long_name: Maximum planting date for the Southern Hemipsphere
+        double fr_flig[pft]   
+            units: fraction
+            long_name: Fine root litter lignin fraction
+            coordinates: pftname
+        double lf_flab[pft]   
+            units: fraction
+            long_name: Leaf litter labile fraction
+            coordinates: pftname
+        double astemf[pft]   
+            units: unitless
+            long_name: Stem Allocation coefficient parameter used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double VMAX_PLANT_P[pft]   
+            long_name: plant POx maximum uptake affinity
+            unit: gP/gfrootC/s
+        double livewdcp_obs[pft]   
+            long_name: live wood CP ratio
+            unit: gC/gP
+        int min_SH_planting_date[pft]   
+            units: YYYYMMDD
+            _FillValue: 0
+            coordinates: pftname
+            comment: Same as min_NH_planting_date, but offset by six months
+            long_name: Minimum planting date for the Southern Hemipsphere
+        double displar[pft]   
+            units: unitless
+            long_name: Ratio of displacement height to canopy top height
+            coordinates: pftname
+        double act25[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double ffrootcn[pft]   
+            units: gC/gN
+            long_name: Fine root C:N during organ fill
+            coordinates: pftname
+        double laimx[pft]   
+            units: unitless
+            long_name: Maximum Leaf Area Index used in CNVegStructUpdate
+            coordinates: pftname
+            _FillValue: 0
+        int mxmat[pft]   
+            units: days
+            _FillValue: 0
+            coordinates: pftname
+            long_name: Maximum number of days to maturity parameter in CNPhenology
+        double koha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double fm_other[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for other plant
+            _FillValue: -999.99
+        double VMAX_PLANT_NH4[pft]   
+            long_name: plant NH4 maximum uptake affinity
+            unit: gN/gfrootC/s
+        double pconv[pft]   
+            units: fraction
+            long_name: Deadstem proportions to send to conversion flux
+            coordinates: pftname
+            comment: pconv+pprod10+pprod100 must sum to 1.0
+            valid_range: 0
+             valid_range: 1
+        double deadwdcp_obs[pft]   
+            long_name: dead wood CP ratio
+            unit: gC/gP
+        double rootb_par[pft]   
+            units: 1/m
+            long_name: CLM rooting distribution parameter
+            coordinates: pftname
+        double mxtmp[pft]   
+            units: C
+            long_name: Max Temperature, parameter used in accFlds
+            _FillValue: 0
+        double tausnir[pft]   
+            units: fraction
+            long_name: Stem transmittance: near-IR
+            coordinates: pftname
+        double deadwdcn[pft]   
+            units: gC/gN
+            long_name: Dead wood (xylem and heartwood) C:N
+            coordinates: pftname
+        double frootcp_obs[pft]   
+            long_name: fine root CP ratio
+            unit: gC/gP
+        int min_NH_planting_date[pft]   
+            units: YYYYMMDD
+            _FillValue: 0
+            coordinates: pftname
+            comment: Typical U.S. earliest planting dates according to AgroIBIS: Maize Apr 10th; soybean May 15th; spring wheat early Apr; winter wheat Sep 1st
+            long_name: Minimum planting date for the Northern Hemipsphere
+        double cc_leaf[pft]   
+            units: 0 to 1
+            long_name: Combustion completeness factor for leaf
+            _FillValue: -999.99
+        double rootprof_beta[pft]   
+            units: unitless
+            long_name: Rooting beta parameter, for C and N vertical discretization
+        double deadwdcn_obs[pft]   
+            long_name: dead wood CN ratio
+            unit: gC/gN
+        double leafcp_obs[pft]   
+            long_name: leaf CP ratio
+            unit: gC/gP
+        double stem_leaf[pft]   
+            units: gC/gC
+            long_name: Allocation parameter: new stem C per new leaf C (-1 means use dynamic stem allocation)
+            coordinates: pftname
+        double fleafi[pft]   
+            units: unitless
+            long_name: Leaf Allocation coefficient parameter fraction used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double leaf_long[pft]   
+            units: years
+            long_name: Leaf longevity
+            coordinates: pftname
+        double cc_dstem[pft]   
+            units: 0 to 1
+            long_name: Combustion completeness factor for dead stem
+            _FillValue: -999.99
+        double pprod10[pft]   
+            units: fraction
+            long_name: Deadstem proportions to send to 10 year product pool
+            coordinates: pftname
+            comment: pconv+pprod10+pprod100 must sum to 1.0
+            valid_range: 0
+             valid_range: 1
+        double irrigated[pft]   
+            flag_meanings: NOT_irrigated irrigated
+            coordinates: pftname
+            valid_range: 0
+             valid_range: 1
+            long_name: Binary Irrigated PFT flag
+            flag_values: 0
+             flag_values: 1
+            units: logical flag
+        double jmaxhd[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double deadwdcp[pft]   
+            units: gC/gP
+            long_name: dead wood C:P 
+        double jmaxha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double rhosnir[pft]   
+            units: fraction
+            long_name: Stem reflectance: near-IR
+            coordinates: pftname
+        double fm_root[pft]   
+            units: 0 to 1
+            long_name: Fire-related mortality factor for fine roots
+            _FillValue: -999.99
+        double VMAX_PLANT_NO3[pft]   
+            long_name: plant NO3 maximum uptake affinity
+            unit: gN/gfrootC/s
+        double pprodharv10[pft]   
+            comment: 100 year harvest is one minus this value
+            _FillValue: 0
+            coordinates: pftname
+            valid_range: 0
+             valid_range: 1
+            long_name: Deadstem proportions to send to 10 year harvest pool
+            units: fraction
+        double lfemerg[pft]   
+            units: unitless
+            long_name: Leaf emergence parameter used in CNPhenology
+            coordinates: pftname
+            _FillValue: 0
+        double hybgdd[pft]   
+            units: unitless
+            long_name: Growing Degree Days for maturity used in CNPhenology
+            coordinates: pftname
+            _FillValue: 0
+        double taulvis[pft]   
+            units: fraction
+            long_name: Leaf transmittance: visible
+            coordinates: pftname
+        double fertnitro[pft]   
+            units: kg N/m2
+            long_name: Max fertilizer to be applied in total
+            coordinates: pftname
+        double lmrhd[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double fcurdv[pft]   
+            units: fraction
+            long_name: Alternate fcur for use with CNDV
+            coordinates: pftname
+        double lmrha[pft]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double fnitr[pft]   
+            units: unitless
+            long_name: Foliage nitrogen limitation factor
+            coordinates: pftname
+        double allconss[pft]   
+            units: unitless
+            long_name: Stem Allocation coefficient parameter power used in CNAllocation
+            coordinates: pftname
+            _FillValue: 0
+        double KM_MINSURF_P_vr[levgrnd,soilorder]   
+            long_name: affinity of P adsorption of soil mineral surface
+            unit: gP/m3
+        double VMAX_MINSURF_P_vr[levgrnd,soilorder]   
+            long_name: maximum P adsorption capacit of soil mineral surface
+            unit: gP/m3
+        double VMAX_PTASE_vr[levgrnd,allpfts]   
+            long_name: maximum phosphatase activity
+            unit: gP/m3/s
+        double cryoturb_diffusion_k[allpfts]   
+            units: m^2/sec
+            long_name: The cryoturbation diffusive constant for vertical mixing of SOM
+        double oxinhib[allpfts]   
+            units: m^3/mol
+            long_name: Inhibition of methane production by oxygen
+        double pHmax[allpfts]   
+            units: unitless
+            long_name: Maximum pH for methane production
+        double q10_hr[allpfts]   
+            units: unitless
+            long_name: Q10 for heterotrophic respiration
+        double rob[allpfts]   
+            units: unitless
+            long_name: Ratio of root length to vertical depth (root obliquity)
+        double tau_l1[allpfts]   
+            units: year
+            long_name: Turnover time of  litter 1
+        double cn_s3_bgc[allpfts]   
+            units: gC/gN
+            long_name: C:N for SOM pool 3
+        double lwtop_ann[allpfts]   
+            units: unitless
+            long_name: Live wood turnover proportion
+        double organic_max[allpfts]   
+            units: kg/m3
+            long_name: Organic matter content where soil is assumed to act like peat for diffusion
+        double k_m_unsat[allpfts]   
+            units: mol/m3-w
+            long_name: Michaelis-Menten oxidation rate constant for CH4 concentration
+        double rf_l3s3[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for litter 3 -> SOM 3
+        double rf_s1s2[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for SOM 1 -> SOM 2
+        double KM_DECOMP_NH4[allpfts]   
+            long_name: affinity of NH4 microbial immobilization
+            unit: gN/m3
+        double KM_DECOMP_P[allpfts]   
+            long_name: affinity of POx microbial immobilization
+            unit: gP/m3
+        double gddfunc_p1[allpfts]   
+            units: unitless
+            long_name: Parameter 1 to calculate GDD threshold as fn of annual T
+        double compet_decomp_nh4[allpfts]   
+            units: unitless
+            long_name: Relative competitiveness of immobilizers for NH4
+        double q10_ch4oxid[allpfts]   
+            units: unitless
+            long_name: Q10 oxidation constant
+        double fstor2tran[allpfts]   
+            units: unitless
+            long_name: Fraction of storage to move to transfer for each onset
+        double vgc_max[allpfts]   
+            units: unitless
+            long_name: Ratio of saturation pressure triggering ebullition
+        double crit_onset_swi[allpfts]   
+            units: days
+            long_name: Critical number of days > soilpsi_on for onset
+        double dnp[allpfts]   
+            units: unitless
+            long_name: Denitrification proportion
+        double KM_DECOMP_NO3[allpfts]   
+            long_name: affinity of NO3 microbial immobilization
+            unit: gN/m3
+        double k_s2[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for SOM 2
+        double k_s1[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for SOM 1
+        double pHmin[allpfts]   
+            units: unitless
+            long_name: Minimum pH for methane production
+        double redoxlag_vertical[allpfts]   
+            units: days
+            long_name: Time lag (days) to inhibit production for newly unsaturated layers
+        double max_altdepth_cryoturbation[allpfts]   
+            units: m
+            long_name: Maximum active layer thickness for cryoturbation to occur
+        double KM_PTASE[allpfts]   
+            long_name: affinity parameter for phosphatase activity
+            unit: gN/gP
+        double cn_s1_bgc[allpfts]   
+            units: unitless
+            long_name: C:N for SOM 1
+        double k_nitr_max[allpfts]   
+            units: 1/sec
+            long_name: Maximum nitrification rate constant
+        double rf_s3s4[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for SOM 3 -> SOM 4
+        double crit_offset_swi[allpfts]   
+            units: days
+            long_name: Critical number of water stress days to initiate offset
+        double q10_mr[allpfts]   
+            units: unitless
+            long_name: Q10 for maintenance respiration
+        double f_sat[allpfts]   
+            units: unitless
+            long_name: Volumetric soil water defining top of water table or where production is allowed
+        double lamda_ptase[allpfts]   
+            long_name: critical value for phosphatase activity
+            unit: gN/gP
+        double redoxlag[allpfts]   
+            units: days
+            long_name: Number of days to lag in the calculation of finundated_lag
+        double rf_s2s1_bgc[allpfts]   
+            units: unitless
+            long_name: respiration fraction SOM 2 to SOM 1
+        double rf_l2s1_bgc[allpfts]   
+            units: unitless
+            long_name: respiration fraction litter 2 to SOM 1
+        double tau_s2[allpfts]   
+            units: year
+            long_name: Turnover time of soil organic matter (SOM) 2
+        double tau_s3[allpfts]   
+            units: year
+            long_name: Turnover time of soil organic matter (SOM) 3
+        double tau_s1[allpfts]   
+            units: year
+            long_name: Turnover time of soil organic matter (SOM) 1
+        double k_s4[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for SOM 4
+        double porosmin[allpfts]   
+            units: unitless
+            long_name: Minimum aerenchyma porosity
+        double soilpsi_off[allpfts]   
+            units: MPa
+            long_name: Critical soil water potential for leaf offset
+        double compet_denit[allpfts]   
+            units: unitless
+            long_name: Relative competitiveness of denitrifiers for NO3
+        double me_herb[allpfts]   
+            units: unitless
+            long_name: Moisture of extinction for herbaceous PFTs (proportion)
+        double cn_s2[allpfts]   
+            units: gC/gN
+            long_name: C:N for SOM pool 2
+        double cn_s3[allpfts]   
+            units: gC/gN
+            long_name: C:N for SOM pool 3
+        double cn_s1[allpfts]   
+            units: gC/gN
+            long_name: C:N for SOM pool 1
+        double cn_s4[allpfts]   
+            units: gC/gN
+            long_name: C:N for SOM pool 4
+        double cwd_flig[allpfts]   
+            units: unitless
+            long_name: Lignin fraction of coarse woody debris
+        double minfuel[allpfts]   
+            units: gC/m2
+            long_name: Dead fuel threshold to carry a fire
+        double r_mort[allpfts]   
+            units: 1/year
+            long_name: Mortality rate
+        double rf_s3s1_bgc[allpfts]   
+            units: unitless
+            long_name: respiration fraction SOM 3 to SOM 1
+        double KM_NIT[allpfts]   
+            long_name: affinity of NH4 nitrification
+            unit: gN/m3
+        double KM_NFIX[allpfts]   
+            long_name: affinity parameter for N2 fixation
+            unit: gC/gN
+        double depth_runoff_Nloss[allpfts]   
+            units: m
+            long_name: Depth over which runoff mixes with soil water for N loss to runoff
+        double soilpsi_on[allpfts]   
+            units: MPa
+            long_name: Critical soil water potential for leaf onset
+        double qflxlagd[allpfts]   
+            units: days
+            long_name: Days to lag time-lagged surface runoff (qflx_surf_lag) in the tropics
+        double cn_s2_bgc[allpfts]   
+            units: gC/gN
+            long_name: C:N for SOM pool 2
+        double rf_s2s3_bgc[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for SOM 2 -> SOM 3
+        double atmch4[allpfts]   
+            units: mol/mol
+            long_name: Atmospheric CH4 mixing ratio to prescribe if not provided by the atmospheric model
+        double smp_crit[allpfts]   
+            units: mm
+            long_name: Critical soil moisture potential to reduce oxidation (mm) due to dessication of methanotrophs above the water table
+        double k_mort[allpfts]   
+            units: unitless
+            long_name: Coefficient of growth efficiency in mortality equation
+        double crit_offset_fdd[allpfts]   
+            units: days
+            long_name: Critical number of freezing days to initiate offset
+        double crit_dayl[allpfts]   
+            units: seconds
+            long_name: Critical day length for senescence
+        double compet_decomp_no3[allpfts]   
+            units: unitless
+            long_name: Relative competitiveness of immobilizers for NO3
+        double rf_s2s3[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for SOM 2 -> SOM 3
+        double cnscalefactor[allpfts]   
+            units: unitless
+            long_name: Scale factor on CN decomposition for assigning methane flux
+        double sf_no3[allpfts]   
+            units: unitless
+            long_name: Soluble fraction of NO3
+        double VMAX_NFIX[allpfts]   
+            long_name: maximum N2 fixation rate
+            unit: gN/gC/s
+        double rf_l3s2_bgc[allpfts]   
+            units: unitless
+            long_name: respiration fraction from litter 3 to SOM 2
+        double compet_plant_nh4[allpfts]   
+            units: unitless
+            long_name: Relative compettiveness of plants for NH4
+        double nongrassporosratio[allpfts]   
+            units: unitless
+            long_name: Ratio of root porosity in non-grass to grass, used for aerenchyma transport
+        double rc_npool[allpfts]   
+            units: unitless
+            long_name: resistance for uptake from plant n pool
+        double rij_kro_alpha[allpfts]   
+            units: unitless
+            long_name: Simple-structure model parameter (Arah and Vinten 1995)
+        double vmax_ch4_oxid[allpfts]   
+            units: mol/m3-w/s
+            long_name: Oxidation rate constant
+        double rf_l2s2[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for litter 2 -> SOM 2
+        double capthick[allpfts]   
+            units: mm
+            long_name: Minimum thickness before assuming h2osfc is impermeable
+        double np_s2_new[allpfts]   
+            units: none
+            long_name: NP ratio for soil 2
+            coordinates: pftname
+        double decomp_depth_efolding[allpfts]   
+            units: m
+            long_name: e-folding depth for reduction in decomposition. Sset to large number for depth-independance
+        double som_diffus[allpfts]   
+            units: m^2/sec
+            long_name: Vertical soil organic matter diffusion coefficient for flat adv/diff profile 
+        double satpow[allpfts]   
+            units: unitless
+            long_name: Exponent on watsat for saturated soil solute diffusion
+        double sf_minn[allpfts]   
+            units: unitless
+            long_name: Soluble fraction of mineral N
+        double rij_kro_a[allpfts]   
+            units: unitless
+            long_name: Best-fit parameter of simple-structure model (Arah and Vinten 1995)
+        double tau_l2_l3[allpfts]   
+            units: year
+            long_name: Turnover time of  litter 2 and litter 3
+        double crit_onset_fdd[allpfts]   
+            units: days
+            long_name: Critical number of freezing days to set gdd counter
+        double dayscrecover[allpfts]   
+            units: unitless
+            long_name: days to recover negative cpool
+        double rij_kro_gamma[allpfts]   
+            units: unitless
+            long_name: Simple-structure model parameter (Arah and Vinten 1995)
+        double minpsi_hr[allpfts]   
+            units: MPa
+            long_name: Minimum soil water potential for heterotrophic resp
+        double rf_cwdl2_bgc[allpfts]   
+            units: unitless
+            long_name: respiration fraction from CWD to litter 2
+        double rij_kro_delta[allpfts]   
+            units: unitless
+            long_name: Simple-structure model parameter (Arah and Vinten 1995)
+        double max_altmultiplier_cryoturb[allpfts]   
+            units: unitless
+            long_name: Ratio of the maximum extent of cryoturbation to the active layer thickness
+        double crit_onset_gdd[allpfts]   
+            units: seconds
+            long_name: Critical day length for senescence
+        double rf_cwdl3_bgc[allpfts]   
+            units: unitless
+            long_name: respiration fraction from CWD to litter 3
+        double rij_kro_beta[allpfts]   
+            units: unitless
+            long_name: Simple-structure model parameter (Arah and Vinten 1995)
+        double k_m[allpfts]   
+            units: mol/m3-w
+            long_name: Michaelis-Menten oxidation rate constant for CH4 concentration
+        double cumprec_onset[allpfts]   
+            units: seconds
+            long_name: Critical day length for senescence
+        double q10lakebase[allpfts]   
+            units: K
+            long_name: Base temperature for lake CH4 production
+        double lake_decomp_fact[allpfts]   
+            units: 1/s
+            long_name: Base decomposition rate (1/s) at 25oC in lake
+        double rsub_top_globalmax[allpfts]   
+            units: gC/gN/s
+            long_name: Base rate for maintenance respiration
+        double bdnr[allpfts]   
+            units: 1/day
+            long_name: bulk denitrification rate
+        double np_s4_new[allpfts]   
+            units: none
+            long_name: NP ratio for soil 4
+            coordinates: pftname
+        double tau_cwd[allpfts]   
+            units: 1/year
+            long_name: Corrected fragmentation rate constant CWD
+        double KM_DEN[allpfts]   
+            long_name: affinity of NO3 denitrification
+            unit: gN/m3
+        double rootlitfrac[allpfts]   
+            units: unitless
+            long_name: Fraction of soil organic matter associated with roots
+        double scale_factor_gasdiff[allpfts]   
+            units: unitless
+            long_name: Scale factor for gas diffusion
+        double compet_nit[allpfts]   
+            units: unitless
+            long_name: Relative competitiveness of nitrifiers for NH4
+        double np_s3_new[allpfts]   
+            units: none
+            long_name: NP ratio for soil 3
+            coordinates: pftname
+        double surface_tension_water[allpfts]   
+            units: J/m^2
+            long_name: Surface tension of water (Arah and Vinten 1995)
+        double crit_dayl_stress[allpfts]   
+            units: seconds
+            long_name: Critical day length for senescence
+        double wcf[allpfts]   
+            units: unitless
+            long_name: Wood combustion fraction
+        double k_l3[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for litter 3
+        double br_mr[allpfts]   
+            units: gC/gN/s
+            long_name: Base rate for maintenance respiration
+        double ef_time[allpfts]   
+            units: years
+            long_name: e-folding time constant
+        double compet_plant_no3[allpfts]   
+            units: unitless
+            long_name: Relative compettiveness of plants for NO3
+        double rf_l1s1_bgc[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for litter 1 -> SOM 1
+        double k_s3[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for SOM 3
+        double k_m_o2[allpfts]   
+            units: mol/m3-w
+            long_name: Michaelis-Menten oxidation rate constant for O2 concentration
+        double q10ch4[allpfts]   
+            units: unitless
+            long_name: Q10 for methane production
+        double k_l2[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for litter 2
+        double scale_factor_aere[allpfts]   
+            units: unitless
+            long_name: Scale factor on the aerenchyma area for sensitivity tests
+        double k_l1[allpfts]   
+            units: 1/day
+            long_name: Decomposition rate for litter 1
+        double rf_l1s1[allpfts]   
+            units: unitless
+            long_name: Respiration fraction for litter 1 -> SOM 1
+        double np_s1_new[allpfts]   
+            units: none
+            long_name: NP ratio for soil 1
+            coordinates: pftname
+        double highlatfact[allpfts]   
+            units: unitless
+            long_name: Multiple of qflxlagd for high latitudes
+        double shape_fluxprof_param1[allpfts]   
+            units: unitless
+            long_name: Shape parameter of advection/diffusion profile
+        double k_frag[allpfts]   
+            units: 1/day
+            long_name: Fragmentation rate for CWD
+        double tc_stress[allpfts]   
+            units: 
+            long_name: 
+            coordinates: pftname
+        double me_woody[allpfts]   
+            units: unitless
+            long_name: Moisture of extinction for woody PFTs (proportion)
+        double froz_q10[allpfts]   
+            units: unitless
+            long_name: Separate q10 for frozen soil respiration rates
+        double f_ch4[allpfts]   
+            units: unitless
+            long_name: Ratio of CH4 production to total C mineralization
+        double gddfunc_p2[allpfts]   
+            units: unitless
+            long_name: Parameter 2 to calculate GDD threshold as fn of annual T
+        double unsat_aere_ratio[allpfts]   
+            units: unitless
+            long_name: Ratio to multiply upland vegetation aerenchyma porosity by compared to inundated systems
+        double vmax_oxid_unsat[allpfts]   
+            units: mol/m3-w/s
+            long_name: Oxidation rate constant
+        double ndays_on[allpfts]   
+            units: days
+            long_name: Number of days to complete leaf onset
+        double ndays_off[allpfts]   
+            units: days
+            long_name: Number of days to complete leaf offset
+        double scale_factor_liqdiff[allpfts]   
+            units: unitless
+            long_name: Scale factor for solute diffusion in liquid (water)
+        double cwd_fcel[allpfts]   
+            units: unitless
+            long_name: Cellulose fraction for CWD
+        double mino2lim[]   
+            units: unitless
+            long_name: Minimum anaerobic decomposition rate as a fraction of potential aerobic rate
+        double q10ch4base[]   
+            long_name: Temperature at which the effective f_ch4 actually equals the constant f_ch4
+        double aereoxid[]   
+            comment: Use with the namelist switch use_aereoxid_prog.  If use_aereoxid_prog is equal to false, then read aereoxid from this parameter file.  Set to value between 0 & 1 (inclusive) for sensitivity tests.
+            long_name: Fraction of methane flux entering aerenchyma rhizosphere that will be oxidized rather than emitted
+            units: unitless
+
+     5 dimensions:
+        allpfts  Size:1 (no dimvar)
+        pft  Size:25 (no dimvar)
+        soilorder  Size:16 (no dimvar)
+        levgrnd  Size:15 (no dimvar)
+        string_length  Size:40 (no dimvar)
+
+    8 global attributes:
+        nco_openmp_thread_number: 1
+        title: Vegetation (Plant Function Type or PFT) constants
+        Created_by: gbisht
+        Conventions: CF-1.0
+        Created_on: Mon Jul 11 13:12:46 PDT 2016
+        NCO: 4.6.6
+        Commit_used: 1f479fff2726e7788e5dc21a348523daef355f7e
+        history: Mon Dec 11 22:07:37 2017: ncap2 clm_params_c170808.nc -s crit_onset_gdd=crit_dayl*0+500 clm_params_c170808_test.nc
+Fri Sep 15 11:19:52 2017: ncap2 -s rsub_top_globalmax = br_mr*0+10.0 clm_params_c170808.nc clm_params_c170808.nc
+Fri Sep  1 16:06:16 2017: ncap2 -s br_xr=br_xr*0+1.5e-8 -s tc_stress=tc_stress*0 -s crit_dayl_stress=crit_dayl_stress*0+36000 -s nstor=nstor*0+3 -O clm_params_c170808.nc clm_params_c170808.nc
+Fri Sep  1 16:05:32 2017: ncap2 -s br_xr=br_xr+1.5e-8 -s tc_stress=tc_stress*0 -s crit_dayl_stress=crit_dayl_stress*0+36000 -s nstor=nstor+3 -O clm_params_c170808.nc clm_params_c170808.nc
+Fri Sep  1 16:04:45 2017: ncap2 -s br_xr=br_xr+1.5e-8 -s tc_stress=tc_stress*0 -O clm_params_c170808.nc clm_params_c170808.nc
+Fri Sep  1 00:58:29 2017: ncap2 -O -s cumprec_onset=crit_dayl*0.0+20.0 clm_params.nc clm_params.nc
+Fri Sep  1 00:56:19 2017: ncap2 -O -s crit_dayl_stress=crit_dayl*1.0 clm_params.nc clm_params.nc
+Fri Sep  1 00:56:14 2017: ncap2 -O -s crit_dayl_stress=crit_dayl*1.0 clm_params.nc
+Fri Sep  1 00:55:48 2017: ncap2 -O -s crit_dayl_stress=crit_dayl clm_params.nc
+Tue Aug  8 12:23:18 2017: ncap2 -s froot_long=leaf_long clm_params_c160711_test170303.nc.bk clm_params_c160711_test170303.nc.bk
+Tue Aug  8 12:22:46 2017: ncap2 -s br_xr=nstor clm_params_c160711_test170303.nc.bk clm_params_c160711_test170303.nc.bk
+Tue Aug  8 12:21:52 2017: ncap2 -s br_xr=br_mr*0.0 clm_params_c160711_test170303.nc.bk clm_params_c160711_test170303.nc.bk
+Fri Mar  3 23:35:51 2017: ncks -3 clm_params_c160711_test170303.nc clm_params_c160711_test170303_2.nc
