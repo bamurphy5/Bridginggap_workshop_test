@@ -15,21 +15,19 @@
 source $MODULESHOME/init/bash
 module load nco
 
-ZONING_FILE=pointlist_example.txt #BAM: This specifies which lat/lon to pull info/set up files for
-#ZONING_FILE=daymet_elm_mappings.txt  
+ZONING_FILE=pointlist_example.txt  
 
 cwd=$(pwd)
-#BAM: makepointdata.py is what gets called to actual pull the data for the points of interest
-#change value after -n to match the number of sites that coordinates are provided for in the ZONING_FILE
-if srun -n 2 python3 ./makepointdata.py \ #BAM:pretty sure srun needs to be used to submit jobs on baseline
+
+if srun -n 2 python3 ./makepointdata.py \ 
 #if python3 ./makepointdata.py \
-  --ccsm_input /gpfs/wolf2/cades/cli185/world-shared/e3sm/inputdata \ #this is the location of the input data on baseline
+  --ccsm_input /gpfs/wolf2/cades/cli185/world-shared/e3sm/inputdata \ 
   --keep_duplicates \
-  --lat_bounds -999,-999 --lon_bounds -999,-999 \ #BAM: -999s are dummy since this is for pulling data for point sims using the provided latlon list
-  --mysimyr 1850 \ #BAM: start year for transient model sims
+  --lat_bounds -999,-999 --lon_bounds -999,-999 \ 
+  --mysimyr 1850 \ 
   --model ELM \
-  --surfdata_grid --res hcru_hcru \ #BAM: hcru_hcru means use the default grid resolution which is 0.5 deg
-  --point_list ${ZONING_FILE} \ #BAM: this is where we need to pass the txt file path that has the latlons for the points of interest
+  --surfdata_grid --res hcru_hcru \ 
+  --point_list ${ZONING_FILE} \ 
 then
   wait
 
