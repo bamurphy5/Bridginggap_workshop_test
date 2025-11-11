@@ -23,7 +23,7 @@ cwd=$(pwd)
 #change value after -n to match the number of sites that coordinates are provided for in the ZONING_FILE
 if srun -n 2 python3 ./makepointdata.py \ #BAM:pretty sure srun needs to be used to submit jobs on baseline
 #if python3 ./makepointdata.py \
-  --ccsm_input /gpfs/wolf2/cades/cli185/world-shared/e3sm/inputdata \ #this is the location of the input data on baseline, naming s(x) matches what makepointdata.py looks for
+  --ccsm_input /gpfs/wolf2/cades/cli185/world-shared/e3sm/inputdata \ #this is the location of the input data on baseline
   --keep_duplicates \
   --lat_bounds -999,-999 --lon_bounds -999,-999 \ #BAM: -999's are dummy since this is for pulling data for point sims using the provided lat/lon list
   --mysimyr 1850 \ #BAM: start year for transient model sims
